@@ -6,22 +6,17 @@ constructor(initialValue) {
 getValue() {
 return this.#value;
 }
-
 padStart(str) {
-this.#value = str + "" + this.#value;
-
+this.#value = str + this.#value;
 }
-
 padEnd(str) {
-this.#value += "" + str;
+this.#value += str;
 }
-
 padBoth(str) {
 this.padStart(str);
 this.padEnd(str);
 }
 }
-
 
 const builder = new StringBuilder(".");
 console.log(builder.getValue()); // "."
