@@ -5,7 +5,6 @@ constructor(items) {
 this.#items = items;
 }
 
-
 getItems() {
 return this.#items;
 }
